@@ -68,6 +68,7 @@ void myAdd(stack_t **start, unsigned int iterator);
 void mySub(stack_t **start, unsigned int iterator);
 void myDiv(stack_t **start, unsigned int iterator);
 void myMul(stack_t **start, unsigned int iterator);
+void myMod(stack_t **start, unsigned int iterator);
 void myNop(stack_t **start, unsigned int iterator);
 void free_allstacks(stack_t *start);
 int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile);
