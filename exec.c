@@ -32,6 +32,9 @@ int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile)
 	/* Tokenize the input line to get opcode */
 	myopcodes = strtok(subjects, " \n\t");
 
+	if (myopcodes && myopcodes[0] == '#')
+		return (0);
+
 	mont.av = strtok(NULL, " \n\t");
 
 	/* Loop through the instruction array to find match for opcodes */
