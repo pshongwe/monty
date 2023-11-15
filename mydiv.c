@@ -15,6 +15,14 @@ void myDiv(stack_t **start, unsigned int iterator)
 		free_allstacks(*start);
 		exit(EXIT_FAILURE);
 	}
+	if ((*start)->n == 0)
+	{
+		fprintf(stderr, "L%d: division by zero\n", iterator);
+                fclose(mont.myfile);
+                free(mont.subjects);
+                free_allstacks(*start);
+                exit(EXIT_FAILURE);
+	}
 
 	(*start)->next->n /= (*start)->n;
 	myPop(start, iterator);
