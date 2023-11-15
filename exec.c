@@ -1,5 +1,7 @@
 #include "monty.h"
 
+int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile);
+
 /**
  * run - executes the code
  * @stack: start of the linked list
