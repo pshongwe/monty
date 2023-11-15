@@ -22,6 +22,7 @@ int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile)
 		{"div", myDiv},
 		{"mul", myMul},
 		{"mod", myMod},
+		{"pchar", myPchar},
 		{"nop", myNop},
 		{NULL, NULL}
 	};
