@@ -9,7 +9,7 @@ void mySub(stack_t **start, unsigned int iterator)
 {
 	if (*start == NULL || (*start)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't add, stack too short\n", iterator);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", iterator);
 		fclose(mont.myfile);
 		free(mont.subjects);
 		free_allstacks(*start);
