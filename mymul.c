@@ -16,6 +16,6 @@ void myMul(stack_t **start, unsigned int iterator)
 		exit(EXIT_FAILURE);
 	}
 
-	(*start)->next->n -= (*start)->n;
+	(*start)->next->n *= (*start)->n;
 	myPop(start, iterator);
 }
