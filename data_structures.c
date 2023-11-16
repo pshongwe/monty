@@ -37,24 +37,7 @@ current = next;
  */
 void myStack(stack_t **start, unsigned int iterator)
 {
-stack_t *current = *start;
-stack_t *newStart = NULL;
-
 (void)iterator;
-
-if (current == NULL || current->next == NULL)
-return;
-
-while (current != NULL)
-{
-stack_t *next = current->next;
-current->next = newStart;
-current->prev = NULL;
-if (newStart != NULL)
-newStart->prev = current;
-newStart = current;
-current = next;
-}
-
-*start = newStart;
+(void)start;
+mont.flgs = 0;
 }
