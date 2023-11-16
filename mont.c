@@ -7,9 +7,8 @@ mont_t mont = {NULL, NULL, NULL, 0};
  * main - Entry point
  * @ac: argument count
  * @av: file location
- * Return: 0 successfully
+ * Return: 0 (success)
  */
-
 int main(int ac, char *av[])
 {
 	char *subjects;
