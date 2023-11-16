@@ -14,7 +14,7 @@ stack_t *newStart = NULL;
 mont.flgs = 1;
 if (current == NULL || current->next == NULL)
 return;
-newStart = = malloc(sizeof(stack_t));
+newStart = malloc(sizeof(stack_t));
 if (newStart == NULL)
 printf("Error\n");
 while (current->next != NULL)
