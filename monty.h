@@ -30,7 +30,7 @@ typedef struct stack_s
 
 
 /**
- * struct mont_s - variables -argements, file, and contents
+ * struct mont_s - variables arguments, file, and contents
  * @av: pointer to a char, representing the value
  * @myfile: pointer to a file structure representing a file
  * @subjects: pointer to a char, representing contents
