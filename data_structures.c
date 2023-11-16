@@ -8,7 +8,7 @@
 void myQueue(stack_t **start, unsigned int iterator)
 {
 stack_t *current = *start;
-stack_t *last = NULL;
+stack_t *newStart = NULL;
 
 (void)iterator;
 
@@ -18,12 +18,16 @@ return;
 while (current->next != NULL)
 current = current->next;
 
-last = current;
-last->prev->next = NULL;
-last->prev = NULL;
-last->next = *start;
-(*start)->prev = last;
-*start = last;
+while (current != NULL)
+{
+stack_t *next = current->prev;
+current->prev = newStart;
+current->next = next;
+newStart = current;
+current = next;
+}
+
+*start = newStart;
 }
 
 /**
