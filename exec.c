@@ -17,7 +17,8 @@ int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile)
 		{"sub", mySub}, {"div", myDiv},
 		{"mul", myMul}, {"mod", myMod},
 		{"pchar", myPchar}, {"nop", myNop},
-		{"pstr", myPstr}, {NULL, NULL}
+		{"pstr", myPstr}, {"rotl", myRotl},
+		{NULL, NULL}
 	};
 	unsigned int x = 0;
 	char *myopcodes;
