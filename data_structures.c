@@ -19,18 +19,24 @@ void myStack(stack_t **start, unsigned int iterator)
 void myQueue(stack_t **start, unsigned int iterator)
 {
 stack_t *current = *start;
+stack_t *newStart = NULL;
 
-(void)iterator;
+(void)iterator;  // Unused parameter warning
+
 if (current == NULL || current->next == NULL)
 return;
 
-while (current->next != NULL)
-current = current->next;
+while (current != NULL)
+{
+stack_t *next = current->next;
+current->next = newStart;
+current->prev = NULL;
+if (newStart != NULL)
+newStart->prev = current;
+newStart = current;
+current = next;
+}
 
-current->next = *start;
-(*start)->prev = current;
-*start = (*start)->next;
-(*start)->prev->next = NULL;
-(*start)->prev = NULL;
+*start = newStart;
 }
 
