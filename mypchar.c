@@ -8,7 +8,7 @@
  */
 void myPchar(stack_t **start, unsigned int iterator)
 {
-	if (*start == NULL || (*start)->next == NULL)
+	if (*start == NULL)
 	{
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", iterator);
 		fclose(mont.myfile);
