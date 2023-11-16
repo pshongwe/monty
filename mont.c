@@ -1,5 +1,4 @@
 #include "monty.h"
-#include <stdio.h>
 
 mont_t mont = {NULL, NULL, NULL, 0};
 
