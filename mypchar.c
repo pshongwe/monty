@@ -2,7 +2,7 @@
 
 /**
  * myPchar - prints the char at the top of the stack
- * followed by a new line 
+ * followed by a new line
  * @start: A pointer to the head of the stack
  * @iterator: The line number where the opcodes appears
  */
@@ -16,7 +16,7 @@ void myPchar(stack_t **start, unsigned int iterator)
 		free_allstacks(*start);
 		exit(EXIT_FAILURE);
 	}
-	if ((*start)->n < 0 || (*start)->n > 127 )
+	if ((*start)->n < 0 || (*start)->n > 127)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", iterator);
 		fclose(mont.myfile);
