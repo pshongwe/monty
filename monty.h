@@ -72,6 +72,7 @@ void myDiv(stack_t **start, unsigned int iterator);
 void myMul(stack_t **start, unsigned int iterator);
 void myMod(stack_t **start, unsigned int iterator);
 void myPchar(stack_t **start, unsigned int iterator);
+void myPstr(stack_t **start, unsigned int iterator);
 void myNop(stack_t **start, unsigned int iterator);
 void free_allstacks(stack_t *start);
 int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile);
