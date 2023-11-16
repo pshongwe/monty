@@ -18,6 +18,7 @@ int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile)
 		{"mul", myMul}, {"mod", myMod},
 		{"pchar", myPchar}, {"nop", myNop},
 		{"pstr", myPstr}, {"rotl", myRotl},
+		{"stack", myStack}, {"queue", myQueue},
 		{"rotr", myRotr}, {NULL, NULL}
 	};
 	unsigned int x = 0;

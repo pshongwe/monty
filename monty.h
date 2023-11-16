@@ -76,6 +76,8 @@ void myPstr(stack_t **start, unsigned int iterator);
 void myNop(stack_t **start, unsigned int iterator);
 void myRotl(stack_t **start, unsigned int iterator);
 void myRotr(stack_t **start, unsigned int iterator);
+void myStack(stack_t **start, unsigned int iterator);
+void myQueue(stack_t **start, unsigned int iterator);
 void free_allstacks(stack_t *start);
 int run(char *subjects, stack_t **stack, unsigned int iterator, FILE *myfile);
 
